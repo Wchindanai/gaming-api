@@ -1,29 +1,12 @@
-//
-//  Package.swift
-//  Perfect JSON API Example
-//
-//  Created by Jonathan Guthrie on 2016-09-26.
-//	Copyright (C) 2015 PerfectlySoft, Inc.
-//
-//===----------------------------------------------------------------------===//
-//
-// This source file is part of the Perfect.org open source project
-//
-// Copyright (c) 2015 - 2016 PerfectlySoft Inc. and the Perfect project authors
-// Licensed under Apache License v2.0
-//
-// See http://perfect.org/licensing.html for license information
-//
-//===----------------------------------------------------------------------===//
-//
-
+// Generated automatically by Perfect Assistant Application
+// Date: 2017-05-02 15:45:10 +0000
 import PackageDescription
-
-// Note that the following Swift Package Manager dependancy inclusion will also import other required modules.
 let package = Package(
-    name: "Perfect-JSON-API",
+    name: "gaming-api",
     targets: [],
     dependencies: [
-		.Package(url: "https://github.com/PerfectlySoft/Perfect-HTTPServer.git", majorVersion: 2, minor: 0)
-	]
+        .Package(url: "https://github.com/PerfectlySoft/Perfect-HTTPServer.git", Version(2,1,15)),
+        .Package(url: "https://github.com/PerfectlySoft/Perfect-MySQL.git", Version(2,1,2)),
+        .Package(url: "https://github.com/SwiftORM/MySQL-StORM.git", majorVersion: 1),
+    ]
 )
